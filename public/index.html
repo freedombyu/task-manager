@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive Task Manager - Modern task management application">
+    <meta name="author" content="Your Name">
+    <title>Interactive Task Manager</title>    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>    
+    <!-- Favicon -->
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+</head>
+  <body>
+    
+   <noscript>You need to enable JavaScript to run this application.</noscript>  
+    
+    <div id="root"></div>
+    <script>
+      (function(){
+        var el = document.createElement('div');
+        el.className = 'fixed bottom-3 right-3 bg-green-600 text-white px-3 py-2 rounded shadow';
+        el.textContent = 'JavaScript enabled';
+        document.body.appendChild(el);
+        setTimeout(function(){ el.remove(); }, 3000);
+      })();
+    </script>
+  </body>
+</html>
